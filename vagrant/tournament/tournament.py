@@ -99,8 +99,10 @@ def swissPairings():
         id2: the second player's unique id
         name2: the second player's name
     """
-    standings = playerStandings() 
+    standings = playerStandings()
     matchups = []
+
+    # Iterate through standings in pairs and match each pair of players together
     for i in range(0, len(standings) - 1, 2):
         first = standings[i]
         second = standings[i+1]
